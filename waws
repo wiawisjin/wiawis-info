@@ -1,0 +1,72 @@
+<!-- 전체 콘텐츠 영역 -->
+
+<!-- 상단 영역: 슬라이더 + 소개 -->
+<div class="section-1-type fade-in-container">
+  <div class="visual-box">
+    <!-- 이미지 슬라이더 -->
+    <div class="slide-container">
+      <div class="slide-wrapper">
+        <div class="slide-item">
+          <img src="https://via.placeholder.com/1920x800/0066cc/ffffff?text=Slide+1" alt="슬라이드 1">
+        </div>
+        <div class="slide-item">
+          <img src="https://via.placeholder.com/1920x800/00cc66/ffffff?text=Slide+2" alt="슬라이드 2">
+        </div>
+        <div class="slide-item">
+          <img src="https://via.placeholder.com/1920x800/cc0066/ffffff?text=Slide+3" alt="슬라이드 3">
+        </div>
+      </div>
+      <div class="slide-nav"></div>
+      <button class="slide-arrow prev">◀</button>
+      <button class="slide-arrow next">▶</button>
+    </div>
+  </div>
+  
+  <div class="content-box">
+    <h2>WAWS-PRO XP 2</h2>
+    <p>최고의 성능과 디자인을 갖춘 프리미엄 로드바이크입니다. WINACT-G 3 그래핀 나노 카본 프레임으로 제작되어 가벼우면서도 강력한 성능을 자랑합니다.</p>
+    <p>경쟁에서 우위를 점하고 싶은 라이더를 위한 최고의 선택입니다.</p>
+  </div>
+</div>
+
+<!-- Product 섹션 1: 좌측 텍스트, 우측 이미지 -->
+<div class="section-3-type fade-in-container">
+  <div class="content-box">
+    <div class="inner-text">
+      <h2>초경량 프레임</h2>
+      <h3>WINACT-G 3 그래핀 나노 카본</h3>
+      <p>최첨단 그래핀 나노 카본 기술을 적용한 프레임은 M 사이즈 기준 단 885g의 초경량 무게를 자랑합니다.</p>
+      <p>가벼우면서도 강력한 강성으로 파워 전달을 극대화합니다.</p>
+    </div>
+  </div>
+  
+  <div class="visual-box">
+    <img src="https://via.placeholder.com/960x720/333333/ffffff?text=Frame+Technology" alt="프레임 기술">
+  </div>
+</div>
+
+<!-- Product 섹션 2: 좌측 이미지, 우측 텍스트 -->
+<div class="section-4-type fade-in-container">
+  <div class="visual-box">
+    <img src="https://via.placeholder.com/960x720/0066cc/ffffff?text=Aerodynamic+Design" alt="공기역학 디자인">
+  </div>
+  
+  <div class="content-box">
+    <div class="inner-text">
+      <h2>공기역학 최적화</h2>
+      <h3>속도를 위한 디자인</h3>
+      <p>풍동 실험을 통해 최적화된 에어로 디자인으로 공기 저항을 최소화했습니다.</p>
+      <p>더 빠른 속도, 더 적은 노력으로 목표에 도달할 수 있습니다.</p>
+    </div>
+  </div>
+</div>
+
+<!-- 하단 영역: 배경 이미지 + 텍스트 -->
+<div class="section-2-type fade-in-container" style="background-image: url('https://via.placeholder.com/1920x800/222222/ffffff?text=Racing+Background');">
+  <div class="content-box">
+    <div class="pre-header">PERFORMANCE</div>
+    <h1>레이스를 위한<br>완벽한 선택</h1>
+    <h3>프로 라이더들이 선택한 신뢰</h3>
+    <p class="description">세계 최고 수준의 레이스에서 검증된 성능과 내구성을 경험하세요.</p>
+  </div>
+</div>
