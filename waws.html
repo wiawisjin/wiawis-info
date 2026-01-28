@@ -1,3 +1,569 @@
+<style>
+/* ====== 상위 CSS 무력화 (DESCRIPTION 내부에만 적용) ====== */
+#spec-details-0 .container,
+#spec-details-0 .fr-view {
+  max-width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+#spec-details-0 .container .mb-3 {
+  background-color: transparent !important;
+}
+
+/* DESCRIPTION 내부의 모든 요소를 강제로 표시 */
+#spec-details-0 * {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* 텍스트 정렬 강제 수정 */
+#spec-details-0 p,
+#spec-details-0 span,
+#spec-details-0 h1,
+#spec-details-0 h2,
+#spec-details-0 h3 {
+  display: block !important;
+  visibility: visible !important;
+  text-align: left !important;
+}
+
+/* Flex 컨테이너는 flex를 유지 */
+#spec-details-0 .section-3-type,
+#spec-details-0 .section-4-type {
+  display: flex !important;
+  visibility: visible !important;
+}
+
+/* 푸터 전체를 숨기는 코드 */
+#footer-area {
+  display: none !important;
+}
+
+/* ====== 전역 설정 ====== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* ===== 섹션 1: 상하 배치 (흰색 배경) ===== */
+.section-1-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0;
+  max-width: 100%;
+  margin: 0;
+}
+
+.section-1-type .visual-box {
+  text-align: left;
+  width: 100%;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+.section-1-type .visual-box img,
+.section-1-type .visual-box iframe {
+  width: 100% !important;
+  height: auto !important;
+  max-width: none !important;
+  display: block;
+}
+
+.section-1-type .visual-box iframe {
+  aspect-ratio: 16/9;
+}
+
+.section-1-type .content-box {
+  text-align: left;
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 20px !important;
+  margin: 0 auto;
+  box-sizing: border-box !important;
+}
+
+.section-1-type .content-box h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000 !important;
+  text-align: left !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.section-1-type .content-box p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333 !important;
+  text-align: left !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  letter-spacing: normal !important;
+}
+
+/* ===== 섹션 2: 배경 이미지 + 좌측 텍스트 ===== */
+.section-2-type {
+  width: 100%;
+  min-height: 500px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-2-type .content-box {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  max-width: 800px;
+  color: #ffffff !important;
+  padding: 20px;
+  text-align: left;
+}
+
+.section-2-type .content-box .pre-header {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #ffffff !important;
+}
+
+.section-2-type .content-box h1 {
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  line-height: 1.1;
+  color: #ffffff !important;
+  text-align: left !important;
+}
+
+.section-2-type .content-box h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  line-height: 1.2;
+  color: #ffffff !important;
+  text-align: left !important;
+}
+
+.section-2-type .content-box h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  line-height: 1.3;
+  color: #ffffff !important;
+  text-align: left !important;
+}
+
+.section-2-type .content-box .description {
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  color: #ffffff !important;
+}
+
+/* ===== 섹션 3, 4: 좌우 배치 ===== */
+.section-3-type, 
+.section-4-type {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.section-3-type .content-box, 
+.section-3-type .visual-box,
+.section-4-type .content-box, 
+.section-4-type .visual-box {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.section-3-type .visual-box, 
+.section-4-type .visual-box {
+  text-align: right;
+  margin-bottom: 0;
+}
+
+.section-4-type .content-box {
+  order: 2;
+}
+
+.section-4-type .visual-box {
+  order: 1;
+  text-align: left;
+}
+
+.inner-text {
+  width: 70%;
+  padding-top: 20%;
+  padding-bottom: 10%;
+  margin: 0 auto;
+  text-align: left !important;
+}
+
+.inner-text h2,
+.inner-text h3,
+.inner-text p {
+  text-align: left !important;
+  color: #000 !important;
+}
+
+/* 미디어 요소 공통 스타일 */
+.section-2-type video, 
+.section-2-type img,
+.section-2-type iframe,
+.section-3-type video, 
+.section-3-type img,
+.section-3-type iframe,
+.section-4-type video, 
+.section-4-type img,
+.section-4-type iframe {
+  width: 100%;
+  height: auto;
+  max-width: 2560px;
+}
+
+.section-2-type iframe,
+.section-3-type iframe,
+.section-4-type iframe {
+  aspect-ratio: 16/9;
+  display: block;
+}
+
+/* ====== 이미지 슬라이드 CSS ====== */
+.slide-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.slide-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.slide-item {
+  flex-shrink: 0;
+  width: 100%;
+  position: relative;
+}
+
+.slide-item img,
+.slide-item iframe {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.slide-item iframe {
+  aspect-ratio: 16/9;
+}
+
+.slide-nav {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.slide-dot {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.slide-dot.active {
+  background-color: #fff;
+}
+
+.slide-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  opacity: 0.8;
+}
+
+.slide-arrow.prev {
+  left: 10px;
+}
+
+.slide-arrow.next {
+  right: 10px;
+}
+
+/* ====== 애니메이션 효과 CSS ====== */
+.fade-in-container {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-container.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ====== 아코디언/스펙 상세 정보 CSS ====== */
+.accordion-container {
+  max-width: 1000px !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+  padding: 0 20px !important;
+  box-sizing: border-box !important;
+  border-top: none !important;
+  position: relative !important;
+}
+
+.accordion-container:first-of-type {
+  margin-top: 40px !important;
+}
+
+.accordion-container:first-of-type::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.accordion-container + .accordion-container {
+  margin-top: 0 !important;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ccc !important;
+  width: 100% !important;
+}
+
+.accordion-header {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 20px 0 !important;
+  margin: 0 !important;
+  background: none !important;
+  border: none !important;
+  text-align: left !important;
+  cursor: pointer !important;
+  font-size: 16px !important;
+  min-height: unset !important;
+  height: auto !important;
+  line-height: 1.5 !important;
+  box-sizing: border-box !important;
+  outline: none !important;
+}
+
+.accordion-header:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.accordion-header h2,
+.accordion-header h3 {
+  font-size: 20px !important;
+  font-weight: bold !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  color: #000 !important;
+  display: block !important;
+  visibility: visible !important;
+  line-height: 1.5 !important;
+  height: auto !important;
+  text-align: left !important;
+}
+
+.accordion-header .icon {
+  font-size: 18px !important;
+  color: #555 !important;
+  transition: transform 0.3s ease;
+  display: inline-block !important;
+  visibility: visible !important;
+  flex-shrink: 0 !important;
+}
+
+.accordion-header[aria-expanded="true"] .icon {
+  transform: rotate(90deg);
+}
+
+.accordion-content {
+  padding: 20px 0;
+  line-height: 1.6;
+  background: #fff;
+  font-size: 16px;
+  color: #444;
+  overflow: visible !important;
+  height: auto !important;
+}
+
+.accordion-content[hidden] {
+  display: none !important;
+}
+
+.accordion-content p {
+  display: block !important;
+  visibility: visible !important;
+  text-align: left !important;
+}
+
+.accordion-content span {
+  display: inline !important;
+  visibility: visible !important;
+}
+
+/* ====== 재고/제품사양 테이블 기본 스타일 ====== */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* 재고현황 제목 스타일 */
+.table-container:first-of-type table tbody tr td {
+  font-size: 28px !important;
+  font-weight: bold !important;
+  text-align: center !important;
+  padding: 0px !important;
+}
+
+/* 테이블 구조 설정 - border-collapse로 셀 간격 제거 */
+#spec-details-stock table,
+#spec-details-stock table.table,
+#spec-details-stock table.table-hover,
+#spec-details-stock #sheetTable,
+#spec-details-1 table,
+#spec-details-1 table.table,
+#spec-details-1 table.table-hover {
+  border-collapse: collapse !important;
+  border-spacing: 0 !important;
+  border: none !important;
+}
+
+/* 재고 & 제품사양 테이블의 border 완전 제거 - Bootstrap .table 오버라이드 */
+#spec-details-stock table.table thead th,
+#spec-details-stock table.table tbody + tbody,
+#spec-details-stock table.table td,
+#spec-details-stock table.table th,
+#spec-details-stock table.table-hover thead th,
+#spec-details-stock table.table-hover td,
+#spec-details-stock table.table-hover th,
+#spec-details-1 table.table thead th,
+#spec-details-1 table.table tbody + tbody,
+#spec-details-1 table.table td,
+#spec-details-1 table.table th,
+#spec-details-1 table.table-hover thead th,
+#spec-details-1 table.table-hover td,
+#spec-details-1 table.table-hover th {
+  border: 0 !important;
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  border-width: 0 !important;
+  border-style: none !important;
+}
+
+/* ID만 있는 선택자로도 추가 */
+#spec-details-stock table,
+#spec-details-stock thead,
+#spec-details-stock thead tr,
+#spec-details-stock thead th,
+#spec-details-stock tbody,
+#spec-details-stock tbody tr,
+#spec-details-stock tbody td,
+#spec-details-stock tbody th,
+#spec-details-stock tr,
+#spec-details-stock th,
+#spec-details-stock td,
+#spec-details-1 table,
+#spec-details-1 thead,
+#spec-details-1 thead tr,
+#spec-details-1 thead th,
+#spec-details-1 tbody,
+#spec-details-1 tbody tr,
+#spec-details-1 tbody td,
+#spec-details-1 tbody th,
+#spec-details-1 tr,
+#spec-details-1 th,
+#spec-details-1 td {
+  border: 0 !important;
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+}
+
+/* stock 클래스도 명시적으로 */
+.stock-thead,
+.stock-thead tr,
+.stock-thead th,
+.stock-tr,
+.stock-th,
+.stock-td {
+  border: 0 !important;
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+}
+
+/* stock 클래스 스타일만 정의 */
+.stock-th, 
+.stock-td {
+  padding: 10px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.stock-thead {
+  background-color: #333;
+  color: white;
+}
+
+/* 줄 배경색 - 짝수 행 */
+.stock-tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+</style>
 <div class="accordion-container fade-in-container is-visible">
     <div class="accordion-item">
         <button class="accordion-header" aria-expanded="true" aria-controls="spec-details-0">
